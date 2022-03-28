@@ -1,5 +1,6 @@
 import csv
 from datetime import datetime
+from unicodedata import category
 
 class Expense():
     def __init__(self, date_str, vendor, category, amount):
@@ -40,3 +41,9 @@ class Expenses():
                     unnecessary_expenses.add(i)
             
             return [necessary_expenses, food_expenses, unnecessary_expenses]
+
+    def categorize_set_comprehension(self):
+        pass
+        necessary_expenses: {x for x in self.list
+            if x.category == 'Phone' or  'Auto and Gas' or 'Classes' or 'Utilities' or 'Mortrage'}
+            food_expenses: {x for x in }
