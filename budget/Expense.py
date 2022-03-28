@@ -46,4 +46,3 @@ class Expenses():
         pass
         necessary_expenses: {x for x in self.list
             if x.category == 'Phone' or  'Auto and Gas' or 'Classes' or 'Utilities' or 'Mortrage'}
-            food_expenses: {x for x in }
