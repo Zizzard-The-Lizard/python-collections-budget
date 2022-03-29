@@ -1,6 +1,7 @@
 from ast import Pass
 from . import Expense
 import matplotlib.pyplot as plt
+import timeit
 
 def main():
     expenses = Expense.Expenses()
@@ -16,6 +17,19 @@ def main():
             b.issubset(a)):
             print("Sets are NOT equal by subset test")
 
+    timeit.timeit()
+        stmt = "expenses.categorize_for_loop()"
+        setup =
+            '
+            from . import Expense
+            expenses = Expense.Expenses()
+            expenses.read_expenses('data/spending_data.csv')
+            '
+        numbers=100000
+        globals=globals()
+        print()
+
+        
 
 if __name__ == "__main__":
     main()
